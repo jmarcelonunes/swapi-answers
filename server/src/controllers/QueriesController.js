@@ -30,11 +30,12 @@ module.exports = {
     query2.equalTo('gender', 'female')
     const resultsMale = await query1.count()
     const resultsFemale = await query2.count()
-    const answer = {
+    let fullResult = {
       M: resultsMale,
       F: resultsFemale
     }
-    JSON.stringify(answer)
+    fullResult = JSON.stringify(fullResult)
+    const answer = fullResult.replace(/[{}]|(['"])/g, '')
     return answer
   },
 

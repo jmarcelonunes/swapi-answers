@@ -3,7 +3,7 @@ const Queries = require('../controllers/QueriesController')
 
 module.exports = {
   csvCreator (res, fileName, fields, data) {
-    const json2csv = new Parser({ fields })
+    const json2csv = new Parser({ fields, delimiter: ';' })
     const csv = json2csv.parse(data)
     res.header('Content-Type', 'text/csv')
     res.attachment(fileName)

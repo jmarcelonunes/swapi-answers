@@ -1,10 +1,8 @@
 const QueriesController = require('../../src/controllers/QueriesController')
-const Parse = require('parse/node')
+const parseConnection = require('../../src/parseConnection')
 
 describe('Queries the SWAPI data', () => {
-  // Parse Initialization
-  Parse.initialize('Jl21MbJjOzHoq3eNjK0dY1cuRyQnOeu1GNIGQpY3', 'Aqy19HFsorwxIhCC3E9IYBQh8WBnkdoMGOdEaYPe')
-  Parse.serverURL = 'https://parseapi.back4app.com/'
+  parseConnection.parseInitialize()
 
   it('should return A new Hope which was the first Star Wars Movie', async () => {
     await expect(QueriesController.film()).resolves.toBe('A New Hope')

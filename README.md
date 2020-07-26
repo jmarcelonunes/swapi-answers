@@ -12,7 +12,11 @@ https://classic.yarnpkg.com/en/docs/install/
 
 ### Installing
 
-First run the following command:
+First, clone the repo and enter in the src directory:
+```
+cd src
+```
+Then run:
 ```
 yarn install
 ```

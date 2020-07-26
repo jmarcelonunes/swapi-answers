@@ -1,10 +1,13 @@
 # swapi-answers
-Node.js application to consume data from a back4app database and deliver answers to pre determined questions in a csv format.
+Node.js application to consume data from an back4app database, using parse-server, and deliver answers to predetermined questions in a csv format. 
 
 
 ### Prerequisites
 
-You have to have installed NodeJs (preferably v14.5.0). Also, you may have Yarn installed.
+You have to have installed NodeJs. Also, you may have Yarn installed.
+```
+https://nodejs.org/en/
+```
 
 ```
 https://classic.yarnpkg.com/en/docs/install/
@@ -38,7 +41,7 @@ After the server is running, go to your browser and type the following url:
 ```
 http://localhost:3333/downloads/csv
 ```
-At this point you will get the csv file with all the answers to the following questions:
+At this point, the CSV file will be downloaded containing all the answers to the following questions:
 ```
 What's the name of the first ever Star Wars film?
 Which species live less on avarage? 
@@ -57,7 +60,7 @@ The csv file will have the following structure:
 ## Running the tests
 
 There are 4 tests suites. Three of them are unit tests, they test methods and uses parse-mockDB to mock the database and test it. Finally, there is a test suite dedicated to integration testing, it uses the library supertest so it can check the functionalities of the RestAPI and it's routes. 
-It is good to mention that the server will not be listening on port 3333 when the integration test execute.
+It is good to mention that the server will not be listening on any port when the integration test execute.
 To run the tests:
 ```
 npm test

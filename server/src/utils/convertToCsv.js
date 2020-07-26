@@ -6,6 +6,7 @@ module.exports = {
     const json2csv = new Parser({ fields, delimiter: ';' })
     const csv = json2csv.parse(data)
     res.header('Content-Type', 'text/csv')
+    res.status(200)
     res.attachment(fileName)
     return res.send(csv)
   },

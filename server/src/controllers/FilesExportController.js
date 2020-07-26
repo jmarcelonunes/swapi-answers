@@ -1,4 +1,5 @@
 const JsonToCsv = require('../utils/convertToCsv')
+const { Parser } = require('json2csv')
 
 module.exports = {
   async downloadCsv (req, res) {
@@ -29,7 +30,11 @@ module.exports = {
         value: 'six'
       }
     ]
-
-    return JsonToCsv.csvCreator(res, 'answers.csv', fields, data)
+    const json2csv = new Parser({ fields, delimiter: ';' })
+    const csv = json2csv.parse(data)
+    res.header('Content-Type', 'text/csv')
+    res.status(200)
+    res.attachment('answers.csv')
+    return res.send(csv)
   }
 }

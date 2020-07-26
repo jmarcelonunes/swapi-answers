@@ -1,16 +1,6 @@
-const { Parser } = require('json2csv')
 const Queries = require('../controllers/QueriesController')
 
 module.exports = {
-  csvCreator (res, fileName, fields, data) {
-    const json2csv = new Parser({ fields, delimiter: ';' })
-    const csv = json2csv.parse(data)
-    res.header('Content-Type', 'text/csv')
-    res.status(200)
-    res.attachment(fileName)
-    return res.send(csv)
-  },
-
   async objectSetup () {
     const answerOne = await Queries.film()
     const answerTwo = await Queries.species()

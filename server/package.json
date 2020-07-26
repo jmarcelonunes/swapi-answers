@@ -10,18 +10,18 @@
   "dependencies": {
     "express": "^4.17.1",
     "json2csv": "^5.0.1",
+    "parse-mockdb": "0.2.5",
     "parse-shim": "^1.0.7"
   },
   "devDependencies": {
-    "jest": "^26.1.0",
-    "nodemon": "^2.0.4",
     "eslint": "^7.5.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "parse-mockdb": "^0.4.0"
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4"
   },
   "peerDependencies": {
     "parse": "^2.15.0"

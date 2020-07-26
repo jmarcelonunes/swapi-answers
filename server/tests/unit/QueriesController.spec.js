@@ -3,6 +3,9 @@ const parseConnection = require('../../src/parseConnection')
 
 describe('Queries the SWAPI data', () => {
   parseConnection.parseInitialize()
+  beforeEach(() => {
+    jest.setTimeout(15000)
+  })
 
   it('should return A new Hope which was the first Star Wars Movie', async () => {
     await expect(QueriesController.film()).resolves.toBe('A New Hope')

@@ -34,7 +34,7 @@ or
 ```
 npm start 
 ```
-After the server is online, go to your browser and type the following url:
+After the server is running, go to your browser and type the following url:
 ```
 http://localhost:3333/downloads/csv
 ```

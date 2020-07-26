@@ -54,9 +54,15 @@ The csv file will have the following structure:
 
 There are 4 tests suites. Three of them are unit tests, they test methods and uses parse-mockDB to mock the database and test it. Finally, there is a test suite dedicated to integration testing, it uses the library supertest so it can check the functionalities of the RestAPI and it's routes. 
 It is good to mention that the server will not be listening on port 3333 when the integration test execute.
+To run the tests:
 ```
-https://www.npmjs.com/package/supertest
+npm test
 ```
+or 
+```
+yarn test
+```
+
 
 ## Built With
 

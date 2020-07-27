@@ -1,6 +1,7 @@
 const Queries = require('../controllers/QueriesController')
 
 module.exports = {
+  // Sets an object with all the answers so it can be converted to csv
   async objectSetup () {
     const answerOne = await Queries.film()
     const answerTwo = await Queries.species()

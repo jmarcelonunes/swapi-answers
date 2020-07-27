@@ -2,6 +2,7 @@ const JsonToCsv = require('../utils/convertToCsv')
 const { Parser } = require('json2csv')
 
 module.exports = {
+  // This module is responsible for creating and sending the csv file for download
   async downloadCsv (req, res) {
     const data = await JsonToCsv.objectSetup()
     const fields = [

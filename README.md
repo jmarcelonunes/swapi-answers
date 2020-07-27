@@ -4,7 +4,7 @@ Node.js application to consume data from an back4app database, using parse-serve
 
 ### Prerequisites
 
-You have to have installed NodeJs. Also, you may have Yarn installed.
+You have to have installed NodeJs. Also, if you wish, you may have Yarn installed.
 ```
 https://nodejs.org/en/
 ```

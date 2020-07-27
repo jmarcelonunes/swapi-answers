@@ -47,7 +47,7 @@ What's the name of the first ever Star Wars film?
 Which species live less on avarage? 
 How many characters are male and how many are female?
 What is the avarage height of the characters?
-Wich characters speaks the langauge Gungan Basic?
+Wich characters speak the language Gungan Basic?
 How many characters live in the most populated planet?
 ```
 ## The csv

@@ -20,7 +20,7 @@ describe('Queries the SWAPI data', () => {
   })
 
   it('should return the Avarage Height of the characters which is 14143/82 = 172.47560975609755', () => {
-    return expect(QueriesController.avarageHeight()).resolves.toBe('172.47560975609755')
+    return expect(QueriesController.avarageHeight()).resolves.toBe('1.72')
   })
 
   it('should return the Characters that speaks Gungan basic', () => {

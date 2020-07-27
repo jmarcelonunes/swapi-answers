@@ -17,7 +17,7 @@ https://classic.yarnpkg.com/en/docs/install/
 
 First, clone the repo and enter in the src directory:
 ```
-cd src
+cd server\src
 ```
 Then run:
 ```

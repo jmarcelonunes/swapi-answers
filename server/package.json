@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "json2csv": "^5.0.1",
     "parse-mockdb": "0.2.5",
     "parse-shim": "^1.0.7"
